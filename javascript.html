@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background:radial-gradient(circle at 50% 50%,#001f4d,#000814,#000000);
+    background-attachment: fixed;
+    font-family: "Press Start 2P", system-ui, sans-serif;
+    font-size: 16px;
+
+    color: rgba(185, 185, 185, 0.747);
+
+  
+
+  
+text-align: center;
+
+}
+/* SOMBRAS E CORES h2 , h4 */
+
+h2{
+    color:#00d4ff;
+    text-shadow:0 0 10px #0011ffea, 0 0 15px #0554ff;
+text-align: center;
+}
+
+h4{
+   color: rgb(128, 255, 0); 
+    text-shadow: 0 0 5px yellowgreen;
+}
+/* SOMBRAS E CORES h2 , h4*/
+
+/* TABELA TABELA TABELA TABELA */
+
+#linha1, #linha2, #linha3{
+height: 30px;
+font-size: 12px;
+text-shadow:0 0 5px #1c2833;
+}
+
+
+table{
+   width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;
+}
+
+#ul{
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+    <h2>1. Como inserir o JavaScript no projeto</h2>
+    <p>Você pode colocar o código diretamente no HTML ou (o mais recomendado) linkar um arquivo externo.</p>
+<br>
+    <h4>HTML5 :</h4>    
+
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;">
+    &lt;script src ="script.js"> &lt;/script>
+    <br>
+    &lt;script>
+    <br>
+    console.log("Olá, mundo!");     
+    </p>
+<br>
+
+<!-- TABELA TABELA TABELA TABELA TABELA -->
+   <h2>2. Variáveis (Onde guardamos dados)</h2> 
+
+<table border="2">
+
+    <tr id="linha1">
+        <th>Comando</th>
+        <th>Escopo</th>
+        <th>Descrição</th>
+    </tr>
+
+    <tr id="linha2">
+
+        <td>const</td>
+        <td>Bloco </td>
+        <td>Cria uma constante. O valor não pode ser alterado depois de definido.</td>
+        
+    </tr>
+
+    <tr id="linha2">
+
+        <td>let</td>
+        <td>Bloco </td>
+        <td>Cria uma variável que pode mudar de valor ao longo do código.</td>
+    </tr>
+
+    <tr id="linha3">
+        <td>var</td>
+        <td>Global Função</td>
+        <td>Modo antigo. Evite usar porque pode causar bugs de escopo.</td>
+    </tr>
+</table>
+<br>
+<!-- TABELA TABELA TABELA TABELA TABELA -->
+ 
+    <h2>3. Tipos de Dados Principais</h2>
+<br>
+    <h4>JavaScript :</h4>
+     <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;";>
+        <span style="color: #569CD6;;"> const </span> nome = <span style="color: chartreuse; "> "Gabriel" </span>;      // String (Texto) <br><br>
+        <span style="color: #569CD6;"> const </span>idade = <span style="color: blueviolet;"> 25 </span>;               // Number (Número) <br><br>
+        <span style="color: #569CD6;"> const </span> herói = <span style="color: blueviolet;"> true </span>;             // Boolean (Verdadeiro ou Falso) <br><br> 
+        <span style="color: #569CD6;"> const </span>frutas =  [<span style="color: chartreuse; ">"Maçã", "Uva"</span>] ; // Array (Lista) <br><br>
+        <span style="color: #569CD6;"> const </span>usuario = {<span style="color: chartreuse; "> <span style="color: blueviolet;"> id: 1, nome</span>: "Ana"  </span>}; // Object (Objeto com propriedades) <br><br>
+       <span style="color: #569CD6;"> let </span>semValor;                   // Undefined (Variável vazia) <br><br>
+        <span style="color: #569CD6;"> const </span>nulo = <span style="color: blueviolet;"> null </span>;              // Null (Valor intencionalmente vazio) <br><br>
+     </p>
+<br>
+     <h2>4. Operadores (Para fazer contas e comparações)</h2>
+     <h4>Aritiméticos :</h4>
+     <ul id="ul">
+        <li>+(Soma / Concatenar texto)</li>
+        <li> -(Sub) </li>
+        <li> *(Multiplicação) </li>
+        <li> /(Divisão) </li>
+        <li> %(Resto da) </li>
+     </ul>
+
+     <h4>Comparação (Retornam true ou false) :</h4>
+     <ul id="ul">
+        <li> == (Igual em valor, mas ignora o tipo. Ex: 5 == "5"é verdadeiro) </li>
+        <li> === ( Igual estrito : igual em valor E tipo. Ex: 5 === "5"é false. Use sempre este! ) </li>
+        <li> != / !== (Diferente / Diferente estrito) </li>
+        <li> > / &lt; (Maior que / Menor que) </li>
+        <li> >= / &lt;= (Maior ou igual / Menor ou igual) </li>
+     </ul>
+     <h4>Lógicos :</h4>
+     <ul id="ul">
+        <li> && (E/AND) -> Todas as condições precisam ser verdadeiras. </li>
+        <li> || (OU / OR) -> Pelo menos uma condição precisa ser verdadeira. </li>
+        <li> ! (NÃO / NOT) -> Inverta o valor booleano. </li>
+     </ul>
+<br>
+<h2>5. Estruturas Condicionais (Tomada de Decisão)</h2>     
+     <h4>JavaScript :</h4>
+
+<pre><code> <span style="color: blue;"> if</span> (idade >= <span style="color: blueviolet;">18</span>) {
+    <span style="color: tomato;">console</span>.log (<span style="color: yellowgreen;">"Maior de idade"</span> );
+ } <span style="color: rgb(0, 0, 255);">else if</span>  (<span style="color: yellowgreen;">idade === 17</span>  ) {
+    <span style="color: tomato;"> console</span>.log( <span style="color: yellowgreen;">"Quase lá!"</span>);
+ } <span style="color: blue"> else </span>{
+    <span style="color: tomato;"> console</span>.log( <span style="color: yellowgreen;">"Menor de idade"</span>);
+ }
+
+    <h4> // Operador Ternário (if/else curto em uma linha)
+ <span style="color: blue;"> const status</span> = idade >= <span style="color: blueviolet;">18</span> ? <span style="color: yellowgreen;">"Autorizado" : "Bloqueado"</span> ;</h4>
+ 
+</code></pre>
+
+
+    <h2>6. Estruturas de Repetição (Loops)</h2>
+        <h4>JavaScript :</h4>
+    <pre><code>
+    // For: Perfeito quando você sabe o limite da repetição
+<span style="color: blue;"> for</span> (<span style="color: blue;">let</span>  i = <span style="color: blueviolet;">0</span>; i &lt; <span style="color: blueviolet;">5</span>; i++) {
+ <span style="color: tomato;"> console</span> .log(<span style="color: yellowgreen;">"Contagem: "</span>  + i);
+ }
+
+    // While: Executa enquanto a condição for verdadeira
+ <span style="color: blue;"> let</span> x = <span style="color: blueviolet;" >0</span>;
+ <span style="color: blue;">while</span>  (x &lt; <span style="color: blueviolet;" >5</span> ) {
+  <span style="color: tomato;">console</span> .log(x);
+   x++;
+ }
+    </code></pre>
+<br>
+
+<h2>7. Funções (Blocos de código reutilizáveis)</h2>
+<h4>JavaScript :</h4>
+<pre><code>
+// Modelo Tradicional
+ <span style="color: blue">function</span> <span style="color: yellow;">somar</span>(a, b) {
+ <span style="color: blue;">return</span> a + b;
+}
+
+// Arrow Function (Modelo moderno, mais curto)
+ <span style="color: blue;">const</span> subtrair = (a, b) => a - b;
+
+// Como rodar a função:
+somar(<span style="color: blueviolet;"> 5, 10</span>); // Retorna 15
+</code></pre>
+<br>
+
+<h2>8. Manipulação do DOM (Interagindo com o HTML da página)</h2>
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Essa é a parte mais importante para quem está criando sites. É como o JS encontra e altera as coisas na tela.</p>
+<h4>Elementos :</h4>
+
+<pre><code>
+   <span style="color: blue;">const</span> botao = <span style="color: tomato;">document</span>.querySelector(<span style="color: yellowgreen;">"#id-do-botao"</span>);     // Seleciona por ID (como no CSS)
+<span style="color: blue;">const</span> caixas = <span style="color: tomato;"> document</span>.querySelectorAll(<span style="color: yellowgreen;">".classe-caixa"</span> ); // Seleciona vários elementos por Classe
+</code></pre>
+
+<h4>Modificar Elementos :</h4>
+<pre><code>
+   <span style="color: blue;">const</span> titulo =<span style="color: tomato;">document</span> .querySelector(<span>"h1"</span>);
+
+titulo.textContent =<span style="color: yellowgreen;">"Novo Texto do Título"</span>; // Muda o texto interno
+titulo.style.color =<span style="color: yellowgreen;">"blue"</span>;                // Altera o CSS diretamente
+titulo.classList.add(<span style="color: yellowgreen;">"classe-nova"</span>);        // Adiciona uma classe CSS
+titulo.classList.remove(<span style="color: yellowgreen;">"classe-antiga"</span>);   // Remove uma classe CSS
+</code></pre>
+
+<br>
+
+<h2>9. Eventos (Fazer o site reagir ao usuário)</h2>
+<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Os eventos disparam funções quando o usuário faz alguma ação na página.</p>
+
+<pre><code>
+   <span style="color: blue;">const</span>  botao =<span style="color: tomato;">document</span>.querySelector(<span style="color: yellowgreen;">"#meu-botao"</span>);
+
+    // Sintaxe: elemento.addEventListener("evento", funcao);
+botao.addEventListener(<span style="color: yellowgreen;">"click"</span>, () => {
+  alert(<span style="color: yellowgreen;">"O botão foi clicado!</span>");
+});
+</code></pre>
+
+<br>
+
+<h4>Principais Eventos para Sites :</h4>
+<ul id="ul">
+  <li>click: Quando o usuário clica em nenhum elemento.</li>
+  <li>submit: Quando um formulário é enviado.</li>
+  <li>keydown/ keyup: Quando uma tecla é pressionada / solta.</li>
+  <li>mouseenter/ mouseleave: Quando o mouse passa por cima / sai do elemento.</li>
+  <li>DOMContentLoaded: Dispara quando a página HTML terminou de carregar completamente (ótimo para envolver seu código JS)</li>
+</ul>
+
+<br>
+
+<h4 id="footer"> 💡Dica de ouro para busca rápida: Quando você estiver programando e algo errado, pressione F12 no seu navegador, vá na aba Console e veja o erro. <br> Se quiser testar o valor de qualquer variável no meio do código, use console.log(suaVariavel);.
+ Que tipo de site ou funcionalidade você está tentando construir agora para que eu possa dar um exemplo prático usando essa linha?</h4>
+<br>
+
+
+    <footer>
+        <p>&copy; 2026 - Meu Site de Consulta Privado. Desenvolvido com foco em HTML5 Semântico.</p>
+    </footer>
+
+</body>
+</html

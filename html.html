@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - 2026</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background:radial-gradient(circle at 50% 50%,#001f4d,#000814,#000000);
+    background-attachment: fixed;
+    font-family: "Press Start 2P", system-ui, sans-serif;
+    font-size: 16px;
+
+    color: rgba(185, 185, 185, 0.747);
+
+    width: 1380px;
+    margin: auto;
+    text-align: center;
+}
+
+/* SOMBRAS E CORES h2 , h4 */
+
+h2{
+    color:#00d4ff;
+    text-shadow:0 0 10px #0011ffea, 0 0 15px #0554ff;
+text-align: center;
+}
+
+h4{
+   color: rgb(128, 255, 0); 
+    text-shadow: 0 0 5px yellowgreen;
+}
+/* SOMBRAS E CORES h2 , h4*/
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;
+}
+
+/* TABELA TABELA TABELA TABELA */
+table{
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none
+}
+    </style>
+</head>
+<body>
+<h4>Aqui está o seu buscador rápido de HTML5 . Se o JavaScript é o cérebro do site, o HTML5 é o esqueleto e os músculos. Aqui sim vamos falar diretamente sobre tags (os comandos entre &lt; >).
+Este guia já contempla as melhores práticas e elementos mais utilizados no desenvolvimento web moderno. Pode favoritar!</h4>
+
+    <h2>1. A Estrutura Básica Obrigatória</h2>
+
+<p>Todo arquivo HTML (geralmente salvo comoindex.html ) precisa começar com esta estrutura para o navegador entender o que está lendo:</p>
+<p>
+<span>&lt;!DOCTYPE html></span> <br>
+<span>&lt;html</span> lang="pt-BR"> <br>
+<span>&lt;head></span> <br>
+    <span>&lt;meta</span> charset="UTF-8"> <br>
+    <span>&lt;meta</span> name="viewport" content="width=device-width, initial-scale=1.0"> <br>
+    <span>&lt;title></span>Meu Site Colorido&lt;/title> <br>
+    <span>&lt;link</span> rel="stylesheet" href="style.css"> <br>
+<span>&lt;/head></span> <br>
+<span>&lt;body></span> <br>
+    <br>
+<span>&lt;/body></span> <br>
+<span>&lt;/html></span>
+
+</p>
+
+<h2>2. Tags Semânticas (Estrutura e SEO)</h2>
+<p>As tags semânticas servem para explicar ao Google e aos leitores de tela o que cada parte do site representa. Evite criar um site feito apenas de &lt;div> .</p>
+
+<table border="2">
+<tr>
+    <th>Marcação</th>
+    <th>O que ela representa?</th>
+</tr>
+
+<tr>
+    <th>&lt;/header></th>
+    <th>O topo do site (onde costuma ficar o logotipo e o menu principal).</th>
+</tr>
+
+<tr>
+    <th>&lt;nav></th>
+    <th>Bloco de links de navegação (menus).</th>
+</tr>
+
+<tr>
+    <th>&lt;main></th>
+    <th>O conteúdo principal e exclusivo daquela página. (Só deve existir um por página).</th>
+</tr>
+
+<tr>   
+    <th>&lt;section></th>
+    <th>Uma seção genérica de conteúdo (ex: Seção "Sobre Nós", Seção "Serviços").</th>
+</tr>
+
+<tr>    
+    <th>&lt;article></th>
+    <th>Um conteúdo que faz sentido sozinho (ex: um post de blog, uma notícia).</th>
+</tr>   
+
+<tr>
+    <th>&lt;aside></th>
+    <th>Conteúdo lateral ou periférico (barras laterais, anúncios, links relacionados).</th>
+</tr>
+
+<tr>
+    <th>&lt;footer</th>    
+    <th>O rodapé do site (direitos autorais, links secundários, contato).</th>
+</tr>
+
+<tr>
+    <th>&lt;div></th>
+    <th>Uma caixa genérica sem significado. Use apenas para fins de design/CSS.</th>
+</tr>
+</table>
+
+<h2>3. Textos e Formatação</h2>
+
+<p>
+<pre><code>
+        &lt;h1>Título Principal&lt;/h1> <br> &lt;h2>Subtítulo Importante&lt;/h2> <br>
+    &lt;h3>Título de Seção&lt;/h3> <br> &lt;p>Isto é um parágrafo de texto comum.&lt;/p> <br>
+    &lt;p>Você pode deixar o texto &lt;strong>em negrito&lt;/strong> ou em &lt;em>itálico&lt;/em>.&lt;/p> <br>
+    &lt;p>Para quebrar a linha à força, use a tag &lt;br> e para uma linha divisória use &lt;hr>.&lt;/p> <br>
+    &lt;span>Texto em linha&lt;/span> <br>
+    4. Links e Mídias (Imagens, Vídeos e Áudio) <br>
+    Links <br>
+    html <br>
+    &lt;a href="#" target="_blank">Ir para o Google (abre em nova aba)&lt;/a> <br>
+    &lt;a href="contato.html">Fale Conosco&lt;/a> <br>
+</code></pre>
+</p>
+
+<h4>Imagens e Mídias</h4>
+<p>
+<pre><code>
+        &lt;img src="imagem.jpg" alt="Descrição da imagem para acessibilidade" loading="lazy"> <br>
+    &lt;video src="video.mp4" controls width="400">Seu navegador não suporta vídeos.&lt;/video> <br>
+    &lt;audio src="musica.mp3" controls>&lt;/audio> <br>
+</code></pre>
+</p>
+
+<h2>5. Listas e Tabelas</h2>
+<h4>Listas</h4>
+<p>
+<pre><code>
+&lt;ul> <br>
+      &lt;li>Item A &lt;/li> <br>
+      &lt;li>Item B &lt;/li> <br>
+&lt;/ul> <br>
+&lt;ol> <br>
+     &lt;li>Primeiro passo &lt;/li> <br>
+     &lt;li>Segundo passo &lt;/li> <br>
+</ol> <br>
+</code></pre>
+</p>
+
+<h4>Tabelas (Apenas para dados tabulares, nunca para organizar o layout do site)</h4>
+<p>
+<pre><code>
+    &lt;table> <br>
+    &lt;thead> &lt;tr> &lt;th>Produto&lt;/th> &lt;th>Preço&lt;/th> <br>
+        &lt;/tr> <br>
+    &lt;/thead> <br>
+    &lt;tbody> &lt;tr> <br>
+            &lt;td>Curso de JS&lt;/td> &lt;td>R$ 50,00&lt;/td> <br>
+        &lt;/tr> <br>
+    &lt;/tbody> <br>
+&lt;/table> <br>
+</code></pre>
+</p>
+
+<h2>6. Formulários Modernos</h2>
+<h4>Os formulários coletaram os dados do usuário digital. O atributo typenão &lt;input> muda completamente o comportamento do campo.</h4>
+
+<pre><code>
+    &lt;form action="/enviar" method="POST">
+    &lt;label for="nome">Nome:&lt;/label>
+    &lt;input type="text" id="nome" placeholder="Digite seu nome" required>
+
+    &lt;label for="email">E-mail:&lt;/label>
+    &lt;input type="email" id="email" required>
+
+    &lt;input type="password" placeholder="Senha">
+    &lt;input type="number" placeholder="Idade">
+    &lt;input type="date"> &lt;input type="color"> &lt;input type="checkbox" id="termos"> &lt;label Pisca por "termos">Aceito os termos&lt;/label>
+
+    &lt;select>
+        &lt;option value="br">Brasil&lt;/option>
+        &lt;option value="pt">Portugal&lt;/option>
+    &lt;/select>
+
+    &lt;button type="submit">Enviar Formulário&lt;/button>
+    &lt;/form>
+</code></pre>
+
+<h2>7. Recursos Modernos e Nativos</h2>
+<p><strong>O HTML</strong> moderno impede a necessidade de usar JavaScript para coisas simples. Veja duas tags excelentes e muito suportadas hoje em dia:</p>
+
+<h4>Uma Tag &lt;dialog>(Modais/Popups Nativos)</h4>
+<p>Crie uma janela de diálogo por cima do site sem precisar de bibliotecas externas complexas.</p>
+
+<p>
+    <pre><code>
+        &lt;dialog id="meuModal">
+        &lt;p>Este é um popup nativo super leve!&lt;/p>
+        &lt;button onclick="document.getElementById('meuModal').close()">Fechar&lt;/button>
+        &lt;/dialog>
+    </code></pre>
+</p>
+
+<h4>O Atributo <strong>popover</strong></h4>
+<p>Qualquer elemento (como uma divou um p) pode virar um popover que aparece e desaparece automaticamente ao clicar em um botão específico, sem nenhuma linha de JavaScript.</p>
+
+<p>
+    <pre><code>
+    &lt;button popovertarget="meu-popover">Ver Dica&lt;/button>
+
+  &lt;div id="meu-popover" popover>
+    &lt;p>Esta é a informação flutuante!&lt;/p>
+  &lt;/div>
+    </code></pre>
+</p>
+
+<h4></div>
+💡 Dica de ouro: Sempre feche suas tags (ex: &lt;div> ... &lt;/div>). As poucas tags que não precisam de fechamento são chamadas de autofechamento , como &lt;img>, &lt;input>, &lt;br>e &lt;hr>.
+
+Agora que você tem as colunas de JavaScript e de HTML5 estruturadas, qual parte do seu site você vai começar a montar primeiro?</h4>
+
+<h1>Resumão de todas as tags do HTML5👨🏾‍💻</h1>
+
+<p>Preparar um resumo com todas as tags do HTML5 organizado por categorias é a melhor forma de criar um "buscador de bolso" perfeito. <br>Assim, quando você esquecer para servir um elemento, basta bater o olho na tabela correspondente. <br>
+
+Aqui está o seu mapa completo e definitivo das tags do HTML5:</p>
+
+<h2>1. Estrutura Raiz e Metadados (O esqueleto invisível)</h2>
+<p>Essas tags ficam no topo do arquivo e preparam o terreno para o navegador e para o Google entenderem seu site.</p>
+
+<table border="1">
+<tr>
+    <th>Marcação</th>
+    <th>O que ela faz?</th> 
+    </tr>
+    <th>&lt;!DOCTYPE html></th>
+    <th>Informa ao navegador que o documento é um arquivo HTML5 moderno.</th>
+<tr>
+    <th>&lt;html</th>
+    <th>A raiz de todo o documento. Tudo no site fica dentro dela.</th>
+</tr>
+<tr>
+    <th>&lt;head></th>
+     <th>Guarda os metadados (informações invisíveis para o usuário, mas específicas para o navegador).</th>
+</tr>
+<tr>
+    <th>&lt;tittle</th>
+    <th>Defina o título da página que aparece na aba do navegador.</th>
+</tr>
+<tr>
+    <th>&lt;meta></th>
+    <th>Define propriedades como codificação de texto ( charset), adaptação para celular ( viewport) e descrição para o Google.</th>
+</tr>
+<tr>
+    <th>&lt;link></th>
+    <th>Vincula arquivos externos ao HTML (como o seu arquivo de estilos CSS ou fontes do Google).</th>
+</tr>
+<tr>
+    <th>&lt;style></th>
+    <th>Permita escrever o código CSS diretamente dentro do arquivo HTML (evite usar muito, prefira o <link>).</th>
+</tr>
+<tr>
+    <th>&lt;script></th>
+    <th>Insira ou linka códigos JavaScript na página.</th>
+</tr></table>
+
+    <h2>2. Tags Semânticas de Layout (Uma estrutura visual)</h2>
+    <p>Eles organizaram as "gavetas" do seu site, informando exatamente onde fica cada bloco de conteúdo.</p>
+
+<table border="1">
+<tr>
+    <th>Marcação</th>
+    <th>O que ela faz?</th>
+</tr>
+
+<tr>
+    <th>&lt;header></th>
+    <th>Defina o topo da página ou de uma seção específica (geralmente tem logotipos e menus).</th>
+</tr>
+<tr>
+    <th>&lt;nav></th>
+    <th>Agrupa os links de navegação principal (os menus do site).</th>
+</tr>
+<tr>
+    <th>&lt;main></th>
+    <th>Envolva o conteúdo principal e exclusivo daquela página. Só deve existir um por página.</th>
+</tr>
+<tr>
+    <th>&lt;section></th>
+    <th>Crie uma seção lógica de conteúdo sobre um tema específico.</th>
+</tr>
+<tr>
+    <th>&lt;article></th>
+    <th>Defina um bloco de conteúdo independente e completo (como um post de blog ou uma notícia).</th>
+</tr>
+<tr>
+    <th>&lt;aside></th>
+    <th>Uma barra lateral com conteúdos secundários ou relacionados (anúncios, widgets).</th>
+</tr>
+<tr>
+    <th>&lt;footer></th>
+    <th>O rodapé da página (direitos autorais, links de contato, redes sociais).</th>
+</tr>
+<tr>
+    <th>&lt;div></th>
+    <th>Uma caixa genérica usada apenas para criar layouts ou aplicar estilos com CSS quando nenhuma tag acima faz sentido.</th>
+</tr>
+</table>
+
+<h2>3. Conteúdo de Texto e Formatação</h2>
+<p>Tags usadas para estruturar e dar significado às palavras na tela.</p>
+
+<table border="1">
+<tr>
+        <th>Marcação</th>
+        <th>O que ela faz?</th>
+    </tr>
+    <tr>
+        <th>&lt;h1> ao &lt;h6> </th>
+        <th>Títulos do site, sendo o < h1>mais importante (use apenas um por página) e < h6>o menor.</th>
+    </tr>
+        <tr>
+        <th>&lt;p></th>
+        <th>Crie um parágrafo de texto comum.</th>
+    </tr>
+        <tr>
+        <th>&lt;strong></th>
+        <th>Destaca um texto dando a ele forte importância (o navegador aplica-se negro).</th>
+    </tr>
+        <tr>
+        <th>&lt;em></th>
+        <th>Dá ênfase a um termo (o navegador aplicado itálico).</th>
+    </tr>
+        <tr>
+        <th>&lt;small></th>
+        <th>Usado para textos secundários, como letrinhas miúdas de contratos ou direitos autorais.</th>
+    </tr>
+        <tr>
+        <th>&lt;code></th>
+        <th>Formato o texto como código de programação (muda a fonte para monoespaçada).</th>
+    </tr>
+        <tr>
+        <th>&lt;pre></th>
+        <th>Exibe o texto exatamente como foi digitalizado no editor, respeitando espaços e quebras de linha.</th>
+    </tr>
+        <tr>
+        <th>&lt;blockquote></th>
+        <th>Usado para indicar uma citação longa de outra fonte.</th>
+    </tr>
+        <tr>
+        <th>&lt;span></th>
+        <th>Uma marcação em linha genérica, usada para isolar trechos de texto e aplicar estilos específicos via CSS.</th>
+    </tr>
+        <tr>
+        <th>&lt;br></th>
+        <th>Quebra a linha do texto obrigatoriamente.</th>
+    </tr>
+        <tr>
+        <th>&lt;hr></th>
+        <th>Cria uma linha divisória horizontal para separar conteúdo.</th>
+    </tr>
+</table>
+
+<h2>4. Links, Listas e Tabelas</h2>
+<h4>Links</h4>
+<ul>
+    <li> &lt;a>: Cria links para outras páginas ou sites (use o atributo href=""para o destino). </li>
+</ul>
+
+<h4>Listas</h4>
+<ul>
+    <li> &lt;ul>: Crie uma lista não ordenada (com bolinhas). </li>
+    <li> &lt;ol>: Cria uma lista ordenada (numerada automaticamente: 1, 2, 3...). </li>
+    <li> &lt;li>: Define cada item de uma lista (usado dentro de &lt;ul>ou &lt;ol>). </li>
+</ul>
+
+<h4>Tabelas</h4>
+
+<ul>
+    <li>&lt;table> Cria a estrutura da tabela. </li>
+    <li>&lt;thead> Grupo o cabeçalho da tabela. </li>
+    <li>&lt;tbody> Agrupa o corpo com os dados principais da tabela.</li>
+    <li>&lt;tfoot> Agrupa o da tabela.</li>
+    <li>&lt;tr> Cria uma linha na tabela.</li>
+    <li>&lt;th> Crie uma célula de título (negrito e centralizado).</li>
+    <li>&lt;td> Cria uma célula de dado comum.</li>
+</ul>
+
+<h2>5. Mídias e Incorporação (Imagens e Vídeos)</h2>
+<p>Para deixar o site visualmente rico e interativo.</p>
+
+<table border="1">
+    <tr>
+        <th>Marcação</th>
+        <th>O que ela faz?</th>
+    </tr>
+
+    <tr>
+        <th>&lt;img></th>
+        <th>Exibe uma imagem na tela (usa os atributos srcpara o caminho e altpara a descrição).</th>
+    </tr>
+
+    <tr>
+        <th>&lt;video></th>
+        <th>Adiciona um player de vídeo nativo (use o atributo controlspara liberar o play/pause).</th>
+    </tr>
+
+    <tr>
+        <th>&lt;audio></th>
+        <th>Adicionado um player de áudio nativo na página.</th>
+    </tr>
+
+    <tr>
+        <th>&lt;source></th>
+        <th>Defina os arquivos de mídia e formatos para as tags < video>ou < audio>.</th>
+    </tr>
+
+    <tr>
+        <th>&lt; iframe></th>
+        <th>Incorpora outra página web inteira dentro do seu site (muito usada para mapas do Google ou vídeos do YouTube).</th>
+    </tr>
+
+    <tr>
+        <th>&lt; pictures></th>
+        <th>Permite carregar imagens diferentes dependendo do tamanho da tela do usuário (ótimo para performance).</th>
+    </tr>
+
+    <tr>
+        <th>&lt; figure></th>
+        <th>Agrupa uma imagem/ilustração e sua legenda explicativa.</th>
+    </tr>
+
+    <tr>
+        <th>&lt; figcaption</th>
+        <th>A legenda da imagem, usada obrigatoriamente dentro da tag < figure>.</th>
+    </tr>
+</table>
+
+<h2>6. Formulários e Elementos de Entrada</h2>
+<p>Para coletar dados, mensagens e interações dos usuários.</p>
+
+<table border="1">
+<tr>
+    <th>Marcação</th>
+    <th>O que ela faz?</th>
+</tr>
+
+<tr>
+    <th>&lt; form></th>
+    <th>Crie uma área do formulário que irá agrupar os campos de envio.</th>
+</tr>
+
+<tr>
+    <th>&lt; label></th>
+    <th>Crie uma etiqueta/texto explicativo para um campo de digitação.</th>
+</tr>
+
+<tr>
+    <th>&lt; imput></th>
+    <th>O campo onde o usuário digital. O tipo muda de acordo com o atributo type(ex: type="text", type="password", type="email", type="date").</th>
+</tr>
+
+<tr>
+    <th>&lt; textarea></th>
+    <th>Caixa de texto grande de várias linhas (ideal para mensagens ou comentários).</th>
+</tr>
+
+<tr>
+    <th>&lt; botton></th>
+    <th>Crie um botão clicável (use type="submit"para enviar formulários).</th>
+</tr>
+
+<tr>
+    <th>&lt; select></th>
+    <th>Crie uma lista de seleção de estilo no menu flutuante (suspenso).</th>
+</tr>
+
+<tr>
+    <th>&lt; option></th>
+    <th>Defina cada uma das opções dentro do < select>.</th>
+</tr>
+
+<tr>
+    <th>&lt; fildset></th>
+    <th>Desenha uma borda para agrupar campos relacionados dentro de um formulário.</th>
+</tr>
+
+<tr>
+    <th>&lt; legend></th>
+    <th>Dá um título para o grupo criado pelo < fieldset>.</th>
+</tr>
+</table>
+
+<h2>7. Interatividade Avançada (Recursos Modernos do HTML5)</h2>
+<p>Tags que dão superpoderes ao site de forma nativa.</p>
+
+<table border="1">
+<tr>
+    <th>Marcação</th>
+    <th>O que ela faz?</th>
+</tr>
+
+<tr>
+    <th>&lt; details>/th>
+    <th>Crie um bloco de conteúdo retrátil que o usuário pode abrir ou fechar clicando nele (estilo sanfona/FAQ).</th>
+</tr>
+
+<tr>
+    <th>&lt; summary></th>
+    <th>O título visível que o usuário clicou para abrir uma tag < details>.</th>
+</tr>
+
+<tr>
+    <th>&lt; dialog</th>
+    <th>Cria uma janela de popup/modal nativa, controlada facilmente por JS.</th>
+</tr>
+
+<tr>
+    <th>&lt; canvas></th>
+    <th>Uma área em branco usada para desenhar gráficos, animações ou jogos diretamente via JavaScript.</th>
+</tr>
+
+<tr>
+    <th>&lt; progress</th>
+    <th>Exiba uma barra de progresso visual (útil para uploads ou etapas de um formulário).</th>
+</tr>
+
+<tr>
+    <th>&lt; meter></th>
+    <th>Exibe uma barra de medição dentro de um intervalo conhecido (ex: uso de espaço em disco).</th>
+</tr>
+</table>
+
+<h4>💡 Como usar esse resumo: Quando estiver codificando e pensar: "Qual tag eu uso para colocar um áudio mesmo?" <br> ou "Como faz uma lista numerada?" ,abra este assunto, dê um Ctrl + F (ou Cmd + F no Mac) e digite a palavra-chave. <br>
+Salva esse guia em um bloco de notas ou nos seus favoritos para usar de consulta rápida no dia a mudarem seus layouts!</h4>
+
+<footer>
+    <p style="color: yellowgreen;">&copy; <strong>2026 - Meu Site de Consulta Privado. Desenvolvido com foco em HTML5 Semântico.</strong> </p>
+</footer>
+</body>
+</html>
