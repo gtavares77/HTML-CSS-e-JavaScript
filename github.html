@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Hub - 2026</title>
 
-    <style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body{
     background:radial-gradient(circle at 50% 50%,#001f4d,#000814,#000000);
     background-attachment: fixed;
@@ -14,18 +15,133 @@ body{
 
     color: rgba(185, 185, 185, 0.747);
 
-    width: 1380px;
+text-align: center;
 }
-    </style>
+
+h2, h1{
+    color:#00d4ff;
+    text-shadow:0 0 10px #0011ffea, 0 0 15px #0554ff;
+    text-align: center;
+    font-size: 16px;
+}
+
+h4{
+   color: rgb(128, 255, 0); 
+    text-shadow: 0 0 5px yellowgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16px;
+}
+
+ul{
+    list-style: none;
+    font-size: 16px;
+   
+}
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:yellowgreen
+    }
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+</style>
 
 </head>
 <body>
-    <h1>ola mundo</h1>
+    <h1>Git e GitHub</h1>
 
-    <p>Git: É o sistema que fica instalado no seu computador controlando as versões do código (como se fosse o botão "Salvar Histórico").
+    <h2 style="color: yellowgreen;">🧠Subir projeto GitHub!</h2>
 
-    <p>GitHub: É o site (a nuvem) onde você guarda os projetos que o Git controla, permitindo que outras pessoas vejam ou que você trabalhe em equipe.</p>
+    <p><span style="color: yellowgreen;">Git</span>: É o sistema que fica instalado no seu computador controlando as versões do código (como se fosse o botão "Salvar Histórico").
 
-Aqui está o seu buscador rápido de Git e GitHub :</p>
+    <p><span style="color: yellowgreen;">GitHub</span>: É o site (a nuvem) onde você guarda os projetos que o Git controla, permitindo que outras pessoas vejam ou que você trabalhe em equipe.</p>
+
+    <h2 style="color: yellowgreen;">🚀 PASSO A PASSO COMPLETO (DO ZERO AO PUSH)</h2>
+     <p style="color: yellowgreen;">Segue exatamente na ordem 👇</p>
+
+     <h2>🟢 1. Criar repositório no GitHub</h2>
+
+<ul>
+    <li>1. Acesse o GitHub</li>
+    <li>2. Clique em New repository</li>
+    <li>3. Crie seu projeto</li>
+</ul>
+
+ <h2>💻 2. Entrar na pasta do projeto </h2>
+    <p style="color: yellowgreen;">No terminal: no vscode.</p> <br>
+    <p>cd caminho/da/sua/pasta</p>
+
+    <h2>⚙️ 3. Iniciar o Git: no terminal dentro do vscode.</h2>
+    <p>git init</p>
+
+    <h2>📦 4. Adicionar arquivos</h2>
+    <p>git add .</p>
+
+    <h2>💾 5. Criar o commit (OBRIGATÓRIO)</h2>
+    <p>git commit -m "Mensagem do commit"</p>
+
+    <h2>📤 6. Conectar o repositório: <strong>(link la no GitHube)</strong> </h2>
+    <p>git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPO.git</p>
+    <p style="color: yellowgreen;">👉 Se já tiver errado antes, corrige com :</p>
+    <p>git remote set-url origin https://github.com/SEU-USUARIO/NOME-DO-REPO.git</p>
+
+    <h2>🔍 7. Verificar branch</h2>
+    <p>git branch</p>
+
+    <p style="color: yellowgreen;">👉 Vai aparecer:</p>
+    <p>* main</p>
+    <p style="color: yellowgreen;">OU</p>
+    <p>* master</p>
+
+    <h2>🚀 8. Enviar para o GitHub (PUSH)</h2>
+    <p style="color: yellowgreen;">👉 Se for master:</p>
+    <p>git push origin master</p>
+    <p style="color: yellowgreen;">👉 Se for main:</p>
+    <p>git push origin main</p>
+
+    <h2>🔄 9. Depois (pra atualizar o projeto)</h2>
+    <p style="color: yellowgreen;">Sempre que mudar algo :</p>
+    <p>git add .</p>
+    <p>git commit -m "Mensagem do commit"</p>
+    <p style="color: yellowgreen;">👉 Se for main:</p>
+    <p>git push origin main</p>
+
+    <h1>⚡ CHECKLIST RÁPIDO (ANTI-ERRO)</h1>
+
+    <ul>
+        <li>✔ Fiz git init</li>
+        <li>✔ Fiz git add .</li>
+        <li>✔ Fiz git commit</li>
+        <li>✔ URL do repositório está correta</li>
+        <li>✔ Sei se é main ou master</li>
+    
+    </ul>
+
+    <h1>🧠 DICA FINAL (nível profissional)</h1>
+    <p>Se quiser evitar confusão com master:</p>
+    <p>git branch -M main</p>
+    <p style="color: yellowgreen;">👉 Isso renomeia a branch master para main, evitando erros futuros.</p>
+
+    <h2 style="color: yellowgreen;">Resumão</h2>
+
+    <p>git init <br>
+    git add . <br>
+    git commit-m"primeiro commit" <br>
+    git remote add origin https://github.com/ <br>
+    git branch-M main <br>
+    git push-u origin main <br>
+    </p>
+    <h4 style="color: yellowgreen;">🚀 PRONTO! Agora é só acessar seu repositório no GitHub e ver seu projeto lá! 🎉</h4>
+
+
+    <footer>
+        <p>&copy; 2026 - Meu Site de Consulta Privado. Desenvolvido com foco em HTML5 Semântico.</p>
+    </footer>
 </body>
 </html>
