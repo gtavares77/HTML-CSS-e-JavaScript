@@ -56,22 +56,28 @@ table{
 
 @media (max-width: 1020px) {
     body {
-        font-size: 8px;
+        font-size: 6px;
         align-items: center;
         text-align: center;
 
-        margin: 0;
+
     }
     h2 {
-        font-size: 8px;
+        font-size: 6px;
+                align-items: center;
+        text-align: center;
     }
     h4 {
-        font-size: 8px;
+        font-size: 6px;
+                align-items: center;
+        text-align: center;
     }
     table {
         width: 100%;
         height: 20px;
-        font-size: 8px;
+        font-size: 6px;
+                align-items: center;
+        text-align: center;
 
     }
 }
