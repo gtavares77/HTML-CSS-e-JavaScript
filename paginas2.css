@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background:radial-gradient(circle at 50% 50%,#001f4d,#000814,#000000);
+    background-attachment: fixed;
+    font-family: "Press Start 2P", system-ui, sans-serif;
+    font-size: 16px;
+
+    color: rgba(185, 185, 185, 0.747);
+
+  
+
+  
+text-align: center;
+
+}
+/* SOMBRAS E CORES h2 , h4 */
+
+h2{
+    color:#00d4ff;
+    text-shadow:0 0 10px #0011ffea, 0 0 15px #0554ff;
+    text-align: center;
+}
+
+h4{
+   color: rgb(128, 255, 0); 
+    text-shadow: 0 0 5px yellowgreen;
+}
+/* SOMBRAS E CORES h2 , h4*/
+
+/* TABELA TABELA TABELA TABELA */
+
+#linha1, #linha2, #linha3{
+height: 30px;
+font-size: 12px;
+text-shadow:0 0 5px #1c2833;
+}
+
+
+table{
+   width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;
+}
+
+#ul{
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 1020px) {
+    body {
+        font-size: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    h2 {
+        font-size: 8px;
+    }
+    h4 {
+        font-size: 8px;
+    }
+    table {
+        width: 100%;
+        height: 20px;
+    }
+}
