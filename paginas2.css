@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
-    background:radial-gradient(circle at 50% 50%,#001f4d,#000814,#000000);
-    background-attachment: fixed;
+body{   
+    background-color: #001431;
     font-family: "Press Start 2P", system-ui, sans-serif;
     font-size: 16px;
     color: rgba(185, 185, 185, 0.747);
     text-align: center;
 
+                border-style: groove;
+            border-color: white;
+            border-width: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 16px 1px rgba(2, 20, 124, 0.329);
+            margin: 20px;
+            padding: 20px;
+   
 }
 /* SOMBRAS E CORES h2 , h4 */
 

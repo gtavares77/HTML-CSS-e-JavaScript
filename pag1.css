@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body{
-    background-color:rgb(0, 0, 0);
-    background-attachment: fixed;
+body{   
+    background-color: #001431;
     font-family: "Press Start 2P", system-ui, sans-serif;
     font-size: 16px;
-    margin: 0;
-
+    color: rgba(185, 185, 185, 0.747);
+    text-align: center;
+    align-items: center;
 }
+
 /* Cabesalho */
     h4{
+     
         color: rgb(146, 124, 124);
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -20,21 +22,17 @@ body{
         margin-left: 6px;
     }
 
+    h2{
+      color: black;
+      text-align: center;
+    }
 
     header{   
-    background-color: rgb(153, 153, 153); 
+    background-color: rgba(185, 185, 185, 0.747);
     padding-top: 8px;
     padding-right: 8px;
     padding-bottom: 8px;
     padding-left: 8px;
-  }
-
-  #flex{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    gap: 16px;
   }
 
     a{
@@ -43,6 +41,7 @@ body{
     margin: 10px;
     text-decoration: none;
   }
+
     nav > a:hover{
     text-decoration: underline;
     }
@@ -50,23 +49,21 @@ body{
 /* Conteúdo do site */
 
 
-
 /* Roda pé */
-footer{
-padding: 10px;
-color: rgb(0, 0, 0);
-background-color: rgb(105, 105, 105);
-}
 
 #rodape{ 
-font-size: 16px; 
+font-size: 14px; 
+background-color: rgba(185, 185, 185, 0.747);
+color: black;
+margin-top: 10%;
+padding: 10px;
 }
 
-div{
-    color: rgba(31, 31, 238, 0.747);   
+footer{
+color: rgb(252, 245, 245);
+font-size: 8px;
+/* Altura do footer */
+padding-top: 25%; 
+
 }
 
-div > a:hover{  
-text-decoration-color: red;
-text-decoration: underline;
-}
