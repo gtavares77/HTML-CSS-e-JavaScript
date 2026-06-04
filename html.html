@@ -7,28 +7,83 @@
     <title>HTML5 - 2026</title>
 
     <style>
-    body{
-        border-style: groove;
-        border-color: white;
-        border-width: 5px;
-        border-radius: 10px;
-      
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-            
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-   
-    }
+        body{
+            border-style: groove;
+            border-color: white;
+            border-width: 5px;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-family: "Press Start 2P", system-ui, sans-serif;
+            color: rgba(185, 185, 185, 0.87);
+            background: radial-gradient(circle at 50% 50%, #001f4d, #000814, #000000);
+        }
+
+        table {
+            width: auto;
+            max-width: calc(100% - 40px);
+            border-collapse: collapse;
+            margin: 14px auto;
+            background: rgba(255,255,255,0.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.28);
+            color: rgba(235,235,235,0.95);
+            font-size: 13px;
+            line-height: 1.25;
+        }
+
+        table th,
+        table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        table th {
+            background: rgba(255,255,255,0.08);
+            color: rgba(250,250,250,0.98);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        table tr:nth-child(odd) {
+            background: rgba(255,255,255,0.02);
+        }
+
+        table tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 720px) {
+            body {
+                margin: 8px;
+                padding: 10px;
+            }
+            table {
+                width: 100%;
+                max-width: 100%;
+                font-size: 11px;
+                display: block;
+                overflow-x: auto;
+                margin: 10px auto;
+            }
+            table th,
+            table td {
+                padding: 5px 6px;
+                word-break: break-word;
+                white-space: normal;
+            }
+            table th {
+                font-size: 11px;
+            }
+        }
     </style>
 </head>
 <body>
-<h4>Aqui está o seu buscador rápido de HTML5 . Se o JavaScript é o cérebro do site, o HTML5 é o esqueleto e os músculos. Aqui sim vamos falar diretamente sobre tags (os comandos entre &lt; >).
-Este guia já contempla as melhores práticas e elementos mais utilizados no desenvolvimento web moderno. Pode favoritar!</h4>
+<h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Aqui está o seu buscador rápido de HTML5 . Se o JavaScript é o cérebro do site, o HTML5 é o esqueleto e os músculos. <br> Aqui sim vamos falar diretamente sobre tags (os comandos entre &lt; >). <br>
+Este guia já contempla as melhores práticas e elementos mais utilizados no desenvolvimento web moderno. <br> Pode favoritar!</h4>
 
     <h2>1. A Estrutura Básica Obrigatória</h2>
 
@@ -156,7 +211,7 @@ Este guia já contempla as melhores práticas e elementos mais utilizados no des
 </p>
 
 <h2>6. Formulários Modernos</h2>
-<h4>Os formulários coletaram os dados do usuário digital. O atributo typenão &lt;input> muda completamente o comportamento do campo.</h4>
+<h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Os formulários coletaram os dados do usuário digital. O atributo typenão &lt;input> muda completamente o comportamento do campo.</h4>
 
 <pre><code>
     &lt;form action="/enviar" method="POST">
@@ -168,7 +223,7 @@ Este guia já contempla as melhores práticas e elementos mais utilizados no des
 
     &lt;input type="password" placeholder="Senha">
     &lt;input type="number" placeholder="Idade">
-    &lt;input type="date"> &lt;input type="color"> &lt;input type="checkbox" id="termos"> &lt;label Pisca por "termos">Aceito os termos&lt;/label>
+    &lt;input type="date"> &lt;input type="color"> &lt;input<br> type="checkbox" id="termos"> <br> &lt;label Pisca por "termos">Aceito os termos&lt;/label>
 
     &lt;select>
         &lt;option value="br">Brasil&lt;/option>
@@ -195,7 +250,7 @@ Este guia já contempla as melhores práticas e elementos mais utilizados no des
 </p>
 
 <h4>O Atributo <strong>popover</strong></h4>
-<p>Qualquer elemento (como uma divou um p) pode virar um popover que aparece e desaparece automaticamente ao clicar em um botão específico, sem nenhuma linha de JavaScript.</p>
+<p>Qualquer elemento (como uma div ou um p) pode virar um popover que aparece e desaparece automaticamente ao clicar em um botão específico, sem nenhuma linha de JavaScript.</p>
 
 <p>
     <pre><code>
@@ -207,12 +262,10 @@ Este guia já contempla as melhores práticas e elementos mais utilizados no des
     </code></pre>
 </p>
 
-<h4></div>
-💡 Dica de ouro: Sempre feche suas tags (ex: &lt;div> ... &lt;/div>). As poucas tags que não precisam de fechamento são chamadas de autofechamento , como &lt;img>, &lt;input>, &lt;br>e &lt;hr>.
+<h4 class="dica2">
+💡 Dica de ouro: Sempre feche suas tags (ex: &lt;div> ... &lt;/div>). As poucas tags que não precisam de fechamento são chamadas de autofechamento, <br> como &lt;img>, &lt;input>, &lt;br>e &lt;hr>.Agora que você tem as colunas de JavaScript e de HTML5 estruturadas, qual parte do seu site você vai começar a montar primeiro?</h4>
 
-Agora que você tem as colunas de JavaScript e de HTML5 estruturadas, qual parte do seu site você vai começar a montar primeiro?</h4>
-
-<h1>Resumão de todas as tags do HTML5👨🏾‍💻</h1>
+<h2>Resumão de todas as tags do HTML5👨🏾‍💻</h1>
 
 <p>Preparar um resumo com todas as tags do HTML5 organizado por categorias é a melhor forma de criar um "buscador de bolso" perfeito. <br>Assim, quando você esquecer para servir um elemento, basta bater o olho na tabela correspondente. <br>
 
@@ -310,7 +363,7 @@ Aqui está o seu mapa completo e definitivo das tags do HTML5:</p>
     </tr>
     <tr>
         <th>&lt;h1> ao &lt;h6> </th>
-        <th>Títulos do site, sendo o < h1>mais importante (use apenas um por página) e < h6>o menor.</th>
+        <th>Títulos do site, sendo o &lt; h1>mais importante (use apenas um por página) e < h6>o menor.</th>
     </tr>
         <tr>
         <th>&lt;p></th>
@@ -356,12 +409,12 @@ Aqui está o seu mapa completo e definitivo das tags do HTML5:</p>
 
 <h2>4. Links, Listas e Tabelas</h2>
 <h4>Links</h4>
-<ul>
+<ul id="listas">
     <li> &lt;a>: Cria links para outras páginas ou sites (use o atributo href=""para o destino). </li>
 </ul>
 
 <h4>Listas</h4>
-<ul>
+<ul id="listas">
     <li> &lt;ul>: Crie uma lista não ordenada (com bolinhas). </li>
     <li> &lt;ol>: Cria uma lista ordenada (numerada automaticamente: 1, 2, 3...). </li>
     <li> &lt;li>: Define cada item de uma lista (usado dentro de &lt;ul>ou &lt;ol>). </li>
@@ -369,7 +422,7 @@ Aqui está o seu mapa completo e definitivo das tags do HTML5:</p>
 
 <h4>Tabelas</h4>
 
-<ul>
+<ul id="listas">
     <li>&lt;table> Cria a estrutura da tabela. </li>
     <li>&lt;thead> Grupo o cabeçalho da tabela. </li>
     <li>&lt;tbody> Agrupa o corpo com os dados principais da tabela.</li>
@@ -524,7 +577,7 @@ Aqui está o seu mapa completo e definitivo das tags do HTML5:</p>
 </tr>
 </table>
 
-<h4>💡 Como usar esse resumo: Quando estiver codificando e pensar: "Qual tag eu uso para colocar um áudio mesmo?" <br> ou "Como faz uma lista numerada?" ,abra este assunto, dê um Ctrl + F (ou Cmd + F no Mac) e digite a palavra-chave. <br>
+<h4 id="dica3">💡 Como usar esse resumo: Quando estiver codificando e pensar: "Qual tag eu uso para colocar um áudio mesmo?" <br> ou "Como faz uma lista numerada?" ,abra este assunto, dê um Ctrl + F (ou Cmd + F no Mac) e digite a palavra-chave. <br>
 Salva esse guia em um bloco de notas ou nos seus favoritos para usar de consulta rápida no dia a mudarem seus layouts!</h4>
 
 <footer>

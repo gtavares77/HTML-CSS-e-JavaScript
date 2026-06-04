@@ -7,30 +7,86 @@
     <title>Git Hub - 2026</title>
 
 <style>
-    body{
-        border-style: groove;
-        border-color: white;
-        border-width: 5px;
-        border-radius: 10px;
-      
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-            
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-   
-    }
-</style>
+        body{
+            border-style: groove;
+            border-color: white;
+            border-width: 5px;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-family: "Press Start 2P", system-ui, sans-serif;
+            color: rgba(185, 185, 185, 0.87);
+            background: radial-gradient(circle at 50% 50%, #001f4d, #000814, #000000);
+        }
+
+        table {
+            width: auto;
+            max-width: calc(100% - 40px);
+            border-collapse: collapse;
+            margin: 14px auto;
+            background: rgba(255,255,255,0.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.28);
+            color: rgba(235,235,235,0.95);
+            font-size: 13px;
+            line-height: 1.25;
+        }
+
+        table th,
+        table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        table th {
+            background: rgba(255,255,255,0.08);
+            color: rgba(250,250,250,0.98);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        table tr:nth-child(odd) {
+            background: rgba(255,255,255,0.02);
+        }
+
+        table tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 720px) {
+            body {
+                margin: 8px;
+                padding: 10px;
+            }
+            table {
+                width: 100%;
+                max-width: 100%;
+                font-size: 11px;
+                display: block;
+                overflow-x: auto;
+                margin: 10px auto;
+            }
+            table th,
+            table td {
+                padding: 5px 6px;
+                word-break: break-word;
+                white-space: normal;
+            }
+            table th {
+                font-size: 11px;
+            }
+        }
+    </style>
 
 </head>
 <body>
-    <h1>Git e GitHub</h1>
+    <h2>Git e GitHub</h2>
 
-    <h2 style="color: yellowgreen;">🧠Subir projeto GitHub!</h2>
+
+        <h2 style="color: yellowgreen;">🧠Subir projeto GitHub!</h2>
 
     <p><span style="color: yellowgreen;">Git</span>: É o sistema que fica instalado no seu computador controlando as versões do código (como se fosse o botão "Salvar Histórico").
 
@@ -41,7 +97,7 @@
 
      <h2>🟢 1. Criar repositório no GitHub</h2>
 
-<ul>
+<ul id="listas">
     <li>1. Acesse o GitHub</li>
     <li>2. Clique em New repository</li>
     <li>3. Crie seu projeto</li>
@@ -86,18 +142,18 @@
     <p style="color: yellowgreen;">👉 Se for main:</p>
     <p>git push origin main</p>
 
-    <h1>⚡ CHECKLIST RÁPIDO (ANTI-ERRO)</h1>
+    <h2>⚡ CHECKLIST RÁPIDO (ANTI-ERRO)</h2>
 
-    <ul>
-        <li>✔ Fiz git init</li>
-        <li>✔ Fiz git add .</li>
-        <li>✔ Fiz git commit</li>
-        <li>✔ URL do repositório está correta</li>
-        <li>✔ Sei se é main ou master</li>
+    <ul style="list-style: none;">
+        <li><span style="color: yellowgreen;">✔</span> Fiz git init</li>
+        <li><span style="color: yellowgreen;">✔</span> Fiz git add .</li>
+        <li><span style="color: yellowgreen;">✔</span> Fiz git commit</li>
+        <li><span style="color: yellowgreen;">✔</span> URL do repositório está correta</li>
+        <li><span style="color: yellowgreen;">✔</span> Sei se é main ou master</li>
     
     </ul>
 
-    <h1>🧠 DICA FINAL (nível profissional)</h1>
+    <h2>🧠 DICA FINAL (nível profissional)</h2>
     <p>Se quiser evitar confusão com master:</p>
     <p>git branch -M main</p>
     <p style="color: yellowgreen;">👉 Isso renomeia a branch master para main, evitando erros futuros.</p>
@@ -111,7 +167,7 @@
     git branch-M main <br>
     git push-u origin main <br>
     </p>
-    <h4 style="color: yellowgreen;">🚀 PRONTO! Agora é só acessar seu repositório no GitHub e ver seu projeto lá! 🎉</h4>
+    <h4 class="dica">🚀 PRONTO! Agora é só acessar seu repositório no GitHub e ver seu projeto lá! 🎉</h4>
 
 
     <footer>

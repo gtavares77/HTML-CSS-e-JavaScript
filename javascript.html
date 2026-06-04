@@ -6,24 +6,79 @@
     <link rel="stylesheet" href="paginas2.css">
     <title>JavaScript - 2026</title>
 <style>
-    body{
-        border-style: groove;
-        border-color: white;
-        border-width: 5px;
-        border-radius: 10px;
-      
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-            
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-   
-    }
-</style>
+        body{
+            border-style: groove;
+            border-color: white;
+            border-width: 5px;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-family: "Press Start 2P", system-ui, sans-serif;
+            color: rgba(185, 185, 185, 0.87);
+            background: radial-gradient(circle at 50% 50%, #001f4d, #000814, #000000);
+        }
+
+        table {
+            width: auto;
+            max-width: calc(100% - 40px);
+            border-collapse: collapse;
+            margin: 14px auto;
+            background: rgba(255,255,255,0.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.28);
+            color: rgba(235,235,235,0.95);
+            font-size: 13px;
+            line-height: 1.25;
+        }
+
+        table th,
+        table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            text-align: left;
+            line-height: 1.2;
+        }
+
+        table th {
+            background: rgba(255,255,255,0.08);
+            color: rgba(250,250,250,0.98);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        table tr:nth-child(odd) {
+            background: rgba(255,255,255,0.02);
+        }
+
+        table tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 720px) {
+            body {
+                margin: 8px;
+                padding: 10px;
+            }
+            table {
+                width: 100%;
+                max-width: 100%;
+                font-size: 11px;
+                display: block;
+                overflow-x: auto;
+                margin: 10px auto;
+            }
+            table th,
+            table td {
+                padding: 5px 6px;
+                word-break: break-word;
+                white-space: normal;
+            }
+            table th {
+                font-size: 11px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h2>1. Como inserir o JavaScript no projeto</h2> <br>
@@ -210,7 +265,7 @@ botao.addEventListener(<span style="color: yellowgreen;">"click"</span>, () => {
 
 <br>
 
-<h4 id="dica"> 💡Dica de ouro para busca rápida: Quando você estiver programando e algo errado, pressione F12 no seu navegador, vá na aba Console e veja o erro. <br> Se quiser testar o valor de qualquer variável no meio do código, use console.log(suaVariavel);.
+<h4 class="dica"> 💡Dica de ouro para busca rápida: Quando você estiver programando e algo errado, pressione F12 no seu navegador, vá na aba Console e veja o erro. <br> Se quiser testar o valor de qualquer variável no meio do código, use console.log(suaVariavel);.
  Que tipo de site ou funcionalidade você está tentando construir agora para que eu possa dar um exemplo prático usando essa linha?</h4>
  
 <br>

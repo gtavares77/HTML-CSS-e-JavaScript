@@ -5,13 +5,8 @@ body{
     background-attachment: fixed;
     font-family: "Press Start 2P", system-ui, sans-serif;
     font-size: 16px;
-
     color: rgba(185, 185, 185, 0.747);
-
-  
-
-  
-text-align: center;
+    text-align: center;
 
 }
 /* SOMBRAS E CORES h2 , h4 */
@@ -21,14 +16,21 @@ h2{
     text-shadow:0 0 10px #0011ffea, 0 0 15px #0554ff;
     text-align: center;
 }
+h3{
+    color: yellowgreen;
+    text-shadow: 0 0 5px yellow;
+    font-size: 16px;
+}
 
 h4{
    color: rgb(128, 255, 0); 
     text-shadow: 0 0 5px yellowgreen;
+    font-size: 14px;
 }
-/* SOMBRAS E CORES h2 , h4*/
-
-/* TABELA TABELA TABELA TABELA */
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: seagreen;
+}
 
 #linha1, #linha2, #linha3{
 height: 30px;
@@ -36,15 +38,14 @@ font-size: 12px;
 text-shadow:0 0 5px #1c2833;
 }
 
-
 table{
    width: 80%;
     margin: auto;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#ul{
+#ul, #listas{
   list-style: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -54,12 +55,16 @@ table{
     font-size: 14px;
 }
 
+.dica, .dica2, #dica3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
 @media (max-width: 1020px) {
     body {
         font-size: 6px;
         align-items: center;
         text-align: center;
-
 
     }
     h2 {
@@ -67,6 +72,13 @@ table{
                 align-items: center;
         text-align: center;
     }
+
+    h3{
+    color: yellowgreen;
+    text-shadow: 0 0 5px yellow;
+    font-size: 10px;
+}
+
     h4 {
         font-size: 6px;
                 align-items: center;
@@ -84,11 +96,7 @@ table{
         }
     }
 
-    #dica{
-        font-size: 4px;
-        align-items: center;
-        text-align: center;
-    }
+
 
     footer {
         font-size: 4px;

@@ -1,55 +1,1109 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="paginas2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="paginas2.css"/>
     <title>CSS3 - 2026</title>
 
-<style>
-body{
-    background:radial-gradient(circle at 50% 50%,#001f4d,#000814,#000000);
-    background-attachment: fixed;
-    font-family: "Press Start 2P", system-ui, sans-serif;
-    font-size: 16px;
+    <style>
+        body{
+            border: 2px solid rgb(255, 255, 255);
+            border-style: groove;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            font-family: "Press Start 2P", system-ui, sans-serif;
+            color: rgba(185, 185, 185, 0.87);
+            background: radial-gradient(circle at 50% 50%, #001f4d, #000814, #000000);
+        }
 
-    color: rgba(185, 185, 185, 0.747);
+        table {
+            width: auto;
+            max-width: calc(100% - 40px);
+            border-collapse: collapse;
+            margin: 14px auto;
+            background: rgba(255,255,255,0.03);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.28);
+            color: rgba(235,235,235,0.95);
+            font-size: 13px;
+            line-height: 1.25;
+        }
 
-   border-style: groove;
-        border-color: white;
-        border-width: 5px;
-        border-radius: 10px;
-      
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 20px;
-            
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-    }
-</style>
+        table th,
+        table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            text-align: left;
+            line-height: 1.2;
+        }
 
-</head>
-<body>
-    <h1>ola mundo</h1>
+        table th {
+            background: rgba(255,255,255,0.08);
+            color: rgba(250,250,250,0.98);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
 
+        table tr:nth-child(odd) {
+            background: rgba(255,255,255,0.02);
+        }
 
+        table tr:hover {
+            background: rgba(255,255,255,0.05);
+        }
 
+        @media (max-width: 720px) {
+            body {
+                margin: 8px;
+                padding: 10px;
+            }
+            table {
+                width: 100%;
+                max-width: 100%;
+                font-size: 11px;
+                display: block;
+                overflow-x: auto;
+                margin: 10px auto;
+            }
+            table th,
+            table td {
+                padding: 5px 6px;
+                word-break: break-word;
+                white-space: normal;
+            }
+            table th {
+                font-size: 11px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <h2>🎓 O Guia Definitivo de Sobrevivência: HTML5 Semântico e CSS</h2>
+    <br />
+    <p>
+      Este guia reúne toda a estrutura teórica e prática necessária para o
+      desenvolvimento web moderno, otimização de SEO, acessibilidade e exames
+      técnicos.
+    </p>
 
+    <h2>🎨 1. Propriedades CSS (Estilização e Layout)</h2>
+    <p>
+      No CSS, manipulamos propriedades para alterar o visual das caixas geradas
+      pelo HTML.
+    </p>
 
+    <h3>📦 Modelo de Caixa e Espaçamento</h3>
+    <table border="1">
+      <tr>
+        <th>Propriedade</th>
+        <th>O que ela faz (Resumido)</th>
+        <th>💡 Macete / Regra de Ouro</th>
+      </tr>
+      <tr>
+        <th>width</th>
+        <th>Defina a largura do elemento.</th>
+        <th>
+          Você pode usar pixels (px), porcentagem (%) ou largura da tela (vw).
+        </th>
+      </tr>
+      <tr>
+        <th>height</th>
+        <th>Defina a altura do elemento.</th>
+        <th>
+          Evite alturas fixas em caixas de texto para que o conteúdo não
+          transborde.
+        </th>
+      </tr>
+      <tr>
+        <th>padding</th>
+        <th>Espaço interno do elemento.</th>
+        <th>Afaste o conteúdo (texto/imagem) da borda da própria caixa.</th>
+      </tr>
+      <tr>
+        <th>margin</th>
+        <th>Espaço externo do elemento.</th>
+        <th>Criar uma zona de separação entre caixas vizinhas.</th>
+      </tr>
+      <tr>
+        <th>border</th>
+        <th>Crie uma borda ao redor da caixa.</th>
+        <th>Sintaxe rápida: tamanho estilo cor (Ex: 2px solid red).</th>
+      </tr>
+      <tr>
+        <th>box-sizing</th>
+        <th>Altere o cálculo do tamanho da caixa.</th>
+        <th>
+          Use sempre border-box para que o preenchimento não esticar o tamanho
+          total.
+        </th>
+      </tr>
+    </table>
 
+    <h3>🔤 Texto e Tipografia</h3>
+    <table border="1">
+      <tr>
+        <th>Propriedade</th>
+        <th>O que ela faz (Resumido)</th>
+        <th>💡 Macete / Regra de Ouro</th>
+      </tr>
+      <tr>
+        <th>color</th>
+        <th>Altera a cor do texto.</th>
+        <th>Aceitam nomes (red), Hexadecimal (#FF0000) ou RGB.</th>
+      </tr>
+      <tr>
+        <th>font-family</th>
+        <th>Defina uma fonte (caligrafia).</th>
+        <th>
+          Sempre coloque uma fonte genérica no final (Ex: Arial, sans-serif).
+        </th>
+      </tr>
+      <tr>
+        <th>font-size</th>
+        <th>Altere o tamanho da letra.</th>
+        <th>
+          Use rem em vez de px para garantir acessibilidade no zoom do
+          navegador.
+        </th>
+      </tr>
+      <tr>
+        <th>font-weight</th>
+        <th>Altere o peso/gordura da letra.</th>
+        <th>bold deixa em negrito, normal retire o negrito.</th>
+      </tr>
+      <tr>
+        <th>font-style</th>
+        <th>Defina o estilo da fonte.</th>
+        <th>Muito usado com o valor italic (itálico).</th>
+      </tr>
+      <tr>
+        <th>text-align</th>
+        <th>Alinha o texto no bloco.</th>
+        <th>Valores comuns: left, right, center e justify.</th>
+      </tr>
+      <tr>
+        <th>text-decoration</th>
+        <th>Adicionado ou removido traços no texto.</th>
+        <th>Use none para remover o sublinhado padrão de links (&lt;a&gt;).</th>
+      </tr>
+      <tr>
+        <th>line-height</th>
+        <th>Defina o espaçamento entre linhas.</th>
+        <th>
+          Melhora a leitura de parágrafos longos (um bom valor é entre 1.5 e
+          1.6).
+        </th>
+      </tr>
+      <tr>
+        <th>letter-spacing</th>
+        <th>Espaçamento entre as letras.</th>
+        <th>Ótimo para dar elegância aos títulos em caixa alta.</th>
+      </tr>
+    </table>
 
+    <h3>🎨 Cores, Fundos e Efeitos</h3>
+    <table border="1">
+      <tr>
+        <th>Propriedade</th>
+        <th>O que ela faz (Resumido)</th>
+        <th>💡 Macete / Regra de Ouro</th>
+      </tr>
+      <tr>
+        <th>background-color</th>
+        <th>Altere o fundo do elemento.</th>
+        <th>Só pinta a área interna da caixa (incluindo o preenchimento).</th>
+      </tr>
+      <tr>
+        <th>background-image</th>
+        <th>Aplica uma imagem de fundo.</th>
+        <th>Solicite uma sintaxe url('caminho-da-imagem').</th>
+      </tr>
+      <tr>
+        <th>background-size</th>
+        <th>Controla o tamanho da imagem de fundo.</th>
+        <th>Use cover para preencher o elemento sem distorcer a imagem.</th>
+      </tr>
+      <tr>
+        <th>opacity</th>
+        <th>Altere a transparência total.</th>
+        <th>
+          Varia de 0 (invisível) a 1 (totalmente opaco). Afeta os filhos também.
+        </th>
+      </tr>
+      <tr>
+        <th>border-radius</th>
+        <th>Arredonda os cantos da caixa.</th>
+        <th>Use 50% em caixas perfeitamente quadradas para criar círculos.</th>
+      </tr>
+      <tr>
+        <th>box-shadow</th>
+        <th>Aplica sombra na caixa.</th>
+        <th>Sintaxe: deslocamento-x deslocamento-y desfoque cor.</th>
+      </tr>
+      <tr>
+        <th>cursor</th>
+        <th>Altere o toque do mouse.</th>
+        <th>Use pointer em elementos clicáveis que não sejam links nativos.</th>
+      </tr>
+      <tr>
+        <th>transition</th>
+        <th>Suaviza a mudança de propriedades.</th>
+        <th>Cria animações simples ao interagir com o elemento.</th>
+      </tr>
+    </table>
 
+    <h3>🧱 Layout e Posicionamento Avançado</h3>
+    <table border="1">
+      <tr>
+        <th>Propriedade</th>
+        <th>O que ela faz (Resumido)</th>
+        <th>💡 Macete / Regra de Ouro</th>
+      </tr>
+      <tr>
+        <th>display</th>
+        <th>Defina o comportamento do elemento.</th>
+        <th>block, inline, flex ou grid.</th>
+      </tr>
+      <tr>
+        <th>position</th>
+        <th>Regras de posicionamento na tela.</th>
+        <th>static (padrão), relative, absolute, fixed.</th>
+      </tr>
+      <tr>
+        <th>top / left</th>
+        <th>Movem elementos posicionados.</th>
+        <th>Só funciona se o elemento tiver position diferente de static.</th>
+      </tr>
+      <tr>
+        <th>z-index</th>
+        <th>Ordem da camada visual (eixo Z).</th>
+        <th>Os números maiores ficam por cima. Só funciona com position.</th>
+      </tr>
+      <tr>
+        <th>justify-content</th>
+        <th>Alinha itens no eixo principal.</th>
+        <th>No Flexbox padrão, controla o alinhamento horizontal.</th>
+      </tr>
+      <tr>
+        <th>align-items</th>
+        <th>Alinha itens no eixo secundário.</th>
+        <th>No Flexbox padrão, controla o alinhamento vertical.</th>
+      </tr>
+      <tr>
+        <th>gap</th>
+        <th>Espaçamento entre subelementos.</th>
+        <th>Funciona dentro de contêineres display: flex ou grid.</th>
+      </tr>
+    </table>
 
+    <h2>🧩 2. Estrutura Global e Semântica do HTML5</h2>
+    <p>
+      O HTML5 foca no significado (semântica) do código para ajudar motores de
+      busca (SEO) e leitores de tela.
+    </p>
 
+    <h3>🌐 Estrutura Base</h3>
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;!DOCTYPE html&gt;</th>
+        <th>Declara que o documento é HTML5.</th>
+        <th>
+          Deve ser obrigatoriamente a primeira linha do código. Não possui
+          fechamento.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;html&gt;</th>
+        <th>Raiz do documento HTML.</th>
+        <th>
+          Sempre adicione lang="pt-br" para evitar que o ouvinte produza
+          tradução.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;head&gt;</th>
+        <th>Metadados e configurações.</th>
+        <th>Tudo aqui dentro é invisível para o usuário final da página.</th>
+      </tr>
+      <tr>
+        <th>&lt;body&gt;</th>
+        <th>Conteúdo visível da página.</th>
+        <th>Só pode existir um por página. Guarda toda a interface do site.</th>
+      </tr>
+      <tr>
+        <th>&lt;meta&gt;</th>
+        <th>Informações técnicas da página.</th>
+        <th>
+          &lt;meta charset="UTF-8"&gt; evita erros de acentuação e caracteres
+          estranhos.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;title&gt;</th>
+        <th>Título da página.</th>
+        <th>
+          Define o texto que aparece na aba do navegador e nos resultados do
+          Google.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;link&gt;</th>
+        <th>Vincula arquivos externos.</th>
+        <th>
+          Usado no &lt;head&gt; para conectar arquivos de estilo CSS externos.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;script&gt;</th>
+        <th>Vincula ou escreve JavaScript.</th>
+        <th>
+          Use o atributo defer para carregar o script sem travar a renderização.
+        </th>
+      </tr>
+    </table>
 
+    <h3>📦 Blocos Estruturais (Layout Semântico)</h3>
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;header&gt;</th>
+        <th>Cabeçalho do site ou de uma seção.</th>
+        <th>Costuma abrigar logotipo, título principal e menu de navegação.</th>
+      </tr>
+      <tr>
+        <th>&lt;nav&gt;</th>
+        <th>Conjunto de links de navegação.</th>
+        <th>Use apenas para os menus principais do site.</th>
+      </tr>
+      <tr>
+        <th>&lt;main&gt;</th>
+        <th>Conteúdo principal da página.</th>
+        <th>Só pode existir uma &lt;main&gt; por página web.</th>
+      </tr>
+      <tr>
+        <th>&lt;section&gt;</th>
+        <th>Agrupar conteúdos temáticos.</th>
+        <th>Quase sempre exige um título (&lt;h2&gt;-&lt;h6&gt;) dentro.</th>
+      </tr>
+      <tr>
+        <th>&lt;article&gt;</th>
+        <th>Conteúdo exclusivo e independente.</th>
+        <th>Se removido e colado em outro lugar, ainda mantém sentido.</th>
+      </tr>
+      <tr>
+        <th>&lt;aside&gt;</th>
+        <th>Conteúdo periférico ou lateral.</th>
+        <th>Usado para barras laterais, anúncios ou curiosidades.</th>
+      </tr>
+      <tr>
+        <th>&lt;footer&gt;</th>
+        <th>Rodapé da página ou seção.</th>
+        <th>Guarda direitos autorais, contato, políticas e links finais.</th>
+      </tr>
+      <tr>
+        <th>&lt;div&gt;</th>
+        <th>Bloco genérico sem semântica.</th>
+        <th>Use apenas para design/CSS quando nenhuma tag semântica servir.</th>
+      </tr>
+    </table>
 
-      
-<footer>
-    <p>&copy; 2026 - Meu Site de Consulta Privado. Desenvolvido com foco em HTML5 Semântico.</p>
-</footer>  
-</body>
+    <h2>🔤 3. Elementos de Conteúdo, Texto e Formatação</h2>
+    <p>
+      Tags para estruturar o fluxo de leitura e dar destaque semântico a trechos
+      de texto.
+    </p>
+
+    <h3>📝 Textos e Listas</h3>
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;h1&gt;</th>
+        <th>Título principal da página.</th>
+        <th>
+          Regras de SEO: Use apenas uma por página para indicar o assunto
+          principal.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;h2&gt;...&lt;h6&gt;</th>
+        <th>Subtítulos hierárquicos.</th>
+        <th>
+          Nunca pule etapas (Ex: do &lt;h2&gt; para &lt;h4&gt;). Siga a ordem do
+          documento.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;p&gt;</th>
+        <th>Cria um parágrafo de texto.</th>
+        <th>
+          Não use tags &lt;p&gt; vazias para pular linhas. Espaçamento é papel
+          do CSS.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;a&gt;</th>
+        <th>Cria hiperlinks.</th>
+        <th>
+          Para abrir em nova aba use target="_blank". Sempre adicione
+          rel="noopener".
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;span&gt;</th>
+        <th>Elemento de linha sem semântica.</th>
+        <th>
+          Usado para envolver palavras isoladas dentro de um texto e estilizar
+          com CSS.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;ul&gt;</th>
+        <th>Lista não ordenada (com bolinhas).</th>
+        <th>Os únicos filhos diretos aceitáveis são as tags &lt;li&gt;.</th>
+      </tr>
+      <tr>
+        <th>&lt;ol&gt;</th>
+        <th>Lista ordenada (numerada).</th>
+        <th>
+          Ideal para sequências lógicas, tutoriais passo a passo e rankings.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;li&gt;</th>
+        <th>Item de uma lista.</th>
+        <th>
+          Só pode existir se estiver contido dentro de uma &lt;ul&gt; ou de uma
+          &lt;ol&gt;.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;br&gt;</th>
+        <th>Quebra de linha forte.</th>
+        <th>
+          Use apenas onde a quebra faz parte do conteúdo (Ex: poemas ou
+          endereços).
+        </th>
+      </tr>
+    </table>
+
+    <h2>🔬 Formação Avançada e Científica</h2>
+    <p>
+      Tags avançadas que combinam semântica, formatação e acessibilidade para
+      conteúdo técnico.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;strong&gt;</th>
+        <th>Define importância forte (negrito).</th>
+        <th>
+          Não use só pela estética. Indica termos cruciais para leitores de tela
+          e SEO.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;em&gt;</th>
+        <th>Dá ênfase ao texto (itálico).</th>
+        <th>
+          Altera a entonação da voz em softwares de leitura para pessoas cegas.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;mark&gt;</th>
+        <th>Destaca texto com fundo amarelo.</th>
+        <th>
+          Funciona como um texto físico. Indica termos relevantes em buscas.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;code&gt;</th>
+        <th>Formato trechos de código de computação.</th>
+        <th>
+          Aplica uma fonte monoespaçada (onde todas as letras têm a mesma
+          largura).
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;pre&gt;</th>
+        <th>Texto pré-formatado.</th>
+        <th>
+          Mantenha todos os espaços em branco e quebras de linha digitadas no
+          código original.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;sub&gt;</th>
+        <th>Texto subscrito (abaixo da linha).</th>
+        <th>Usado em notações químicas (Ex: o número 2 na tag gera H₂O).</th>
+      </tr>
+      <tr>
+        <th>&lt;sup&gt;</th>
+        <th>Texto sobrescrito (acima da linha).</th>
+        <th>
+          Usado em equações matemáticas ou dados (Ex: o número 2 na tag gera
+          X²).
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;time&gt;</th>
+        <th>Identificar datas e horários.</th>
+        <th>
+          Solicite o atributo datetime no formato internacional (Ex:
+          datetime="2026-05-17").
+        </th>
+      </tr>
+    </table>
+
+    <h2>📸 4. Mídias, Gráficos e Incorporações</h2>
+    <p>Tags para inserção de elementos visuais e conteúdos externos.</p>
+
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;img&gt;</th>
+        <th>Insere uma imagem na página.</th>
+        <th>
+          Obrigatório: o atributo alt com a descrição da imagem para
+          acessibilidade.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;video&gt;</th>
+        <th>Exibe um player de vídeo nativo.</th>
+        <th>
+          Adicione o atributo controls para o usuário ter os botões Play e
+          Pause.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;audio&gt;</th>
+        <th>Exibe um player de áudio nativo.</th>
+        <th>
+          Assim como o vídeo, é necessário fazer atributo controls para ficar
+          visível na tela.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;picture&gt;</th>
+        <th>Carrega imagens responsivas.</th>
+        <th>
+          Altera a fonte da imagem dependendo do tamanho da tela (celular vs
+          desktop).
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;figure&gt;</th>
+        <th>Agrupa uma mídia e sua legenda.</th>
+        <th>
+          Usado para isolar ilustrações, fotos, diagramas ou trechos de códigos.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;figcaption&gt;</th>
+        <th>Legenda do elemento &lt;figure&gt;.</th>
+        <th>
+          Deve ser colocado obrigatoriamente dentro da tag &lt;figure&gt;.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;canvas&gt;</th>
+        <th>Área de desenho via JavaScript.</th>
+        <th>
+          Baseado em pixels (raster). Perde qualidade ao aumentar. Usado para
+          jogos 2D.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;svg&gt;</th>
+        <th>Renderização gráfica.</th>
+        <th>
+          Baseado em equações matemáticas. Tem qualidade infinita e aceita
+          estilos CSS.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;iframe&gt;</th>
+        <th>Incorporar outra página web.</th>
+        <th>
+          Abre uma janela para um site externo (muito usado por mapas e vídeos
+          externos).
+        </th>
+      </tr>
+    </table>
+
+    <h2>📝 5. Formulários, Entradas e Validação Nativa</h2>
+    <p>
+      O HTML5 possui um sistema de validação que roda direto no navegador,
+      dispensando códigos complexos de JavaScript para validações básicas.
+    </p>
+
+    <h3>📋 Elementos de guarnição</h3>
+    <table border="1">
+      <tr>
+        <th>Etiqueta / Atribuição</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;form&gt;</th>
+        <th>Defina uma área do formulário.</th>
+        <th>Todos os dados para envio devem ser mapeados nesta tag.</th>
+      </tr>
+      <tr>
+        <th>&lt;input&gt;</th>
+        <th>Campo de entrada de dados genérico.</th>
+        <th>
+          Altere o comportamento mudando o atributo type (text, password,
+          email).
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;label&gt;</th>
+        <th>Rótulo/Texto descritivo do campo.</th>
+        <th>
+          Use o atributo for com o mesmo valor do id input para vinculá-los.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;textarea&gt;</th>
+        <th>Campo de texto de múltiplas linhas.</th>
+        <th>
+          Permite redimensionamento nativo pelo usuário (pode ser travado via
+          CSS).
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;button&gt;</th>
+        <th>Elemento interativo.</th>
+        <th>
+          Dentro de um &lt;form&gt;, seu tipo padrão é type="submit" (envia os
+          dados).
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;select&gt;</th>
+        <th>Cria uma lista suspensa (menu suspenso).</th>
+        <th>Funciona como um contêiner para agrupar as opções de escolha.</th>
+      </tr>
+      <tr>
+        <th>&lt;option&gt;</th>
+        <th>Opção de escolha do &lt;select&gt;.</th>
+        <th>
+          Use o atributo value para definir o dado real que será enviado ao
+          servidor.
+        </th>
+      </tr>
+    </table>
+
+    <h3>🛠️ Atributos de Validação Nativa</h3>
+    <table border="1">
+      <tr>
+        <th>Atribuição</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>required</th>
+        <th>Torna o preenchimento obrigatório.</th>
+        <th>Impede o envio do formulário se o campo estiver em branco.</th>
+      </tr>
+      <tr>
+        <th>pattern</th>
+        <th>Valide usando Expressões Regulares.</th>
+        <th>
+          Força formatos específicos como CPFs, telefones ou CEPs (Regex).
+        </th>
+      </tr>
+      <tr>
+        <th>min / max</th>
+        <th>Defina limites numéricos ou de dados.</th>
+        <th>Restrinja valores mínimos e máximos aceitáveis no campo.</th>
+      </tr>
+      <tr>
+        <th>step</th>
+        <th>Defina o intervalo de incremento.</th>
+        <th>
+          Ex: step="0.01" permite que campos numéricos aceitem decimais
+          (dinheiro).
+        </th>
+      </tr>
+      <tr>
+        <th>autofocus</th>
+        <th>Foca o campo ao carregar a página.</th>
+        <th>Boa prática de experiência: use em apenas um campo por página.</th>
+      </tr>
+      <tr>
+        <th>placeholder</th>
+        <th>Texto de ajuda temporária.</th>
+        <th>
+          Parece assim que o usuário começa a digitar no campo. Não substitua um
+          label.
+        </th>
+      </tr>
+      <tr>
+        <th>readonly</th>
+        <th>Bloqueia edição, mas envia o dado.</th>
+        <th>
+          O usuário lê, não altera, mas o dado é enviado na submissão do
+          formulário.
+        </th>
+      </tr>
+      <tr>
+        <th>disabled</th>
+        <th>Desativa o campo e bloqueia o envio.</th>
+        <th>
+          Pegadinha de prova: o campo fica cinza e o dado NÃO é enviado ao
+          servidor.
+        </th>
+      </tr>
+    </table>
+
+    <h2>🛠️ 6. Atributos Globais e Tags Interativas</h2>
+    <p>
+      Recursos modernos do HTML5 que adicionam comportamento dinâmico e controle
+      de acessibilidade diretamente na marcação.
+    </p>
+
+    <h3>🌍 Atributos Globais (funcionam em QUALQUER tag)</h3>
+    <table border="1">
+      <tr>
+        <th>Atribuição</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>id</th>
+        <th>Identificador exclusivo do elemento.</th>
+        <th>Regra absoluta: nunca repita o mesmo nome id na mesma página.</th>
+      </tr>
+      <tr>
+        <th>class</th>
+        <th>Identificador reutilizável.</th>
+        <th>
+          Pode ser aplicado em múltiplos elementos para agrupá-los no CSS.
+        </th>
+      </tr>
+      <tr>
+        <th>data-*</th>
+        <th>Armazena dados personalizados ocultos.</th>
+        <th>
+          Substitua o * por qualquer nome (Ex: data-produto-id="45"). Lido via
+          JS.
+        </th>
+      </tr>
+      <tr>
+        <th>contenteditable</th>
+        <th>Permite ao usuário editar o texto.</th>
+        <th>
+          Transforma elementos estáticos (como &lt;p&gt; ou &lt;h2&gt;) em
+          campos editáveis.
+        </th>
+      </tr>
+      <tr>
+        <th>draggable</th>
+        <th>Define se o elemento é arrastável.</th>
+        <th>
+          Ativa a API nativa de arrastar e soltar do navegador (Drag and Drop).
+        </th>
+      </tr>
+      <tr>
+        <th>hidden</th>
+        <th>Oculta o elemento da interface.</th>
+        <th>Tem o mesmo efeito prático que aplicar display: none no CSS.</th>
+      </tr>
+      <tr>
+        <th>tabindex</th>
+        <th>Controle a navegação através da tecla TAB.</th>
+        <th>
+          0 não inclui fluxo comum; -1 remove a seleção de foco do teclado.
+        </th>
+      </tr>
+    </table>
+
+    <h3>⚡ Tags Interativas Nativas (Funcionam sem JavaScript)</h3>
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;details&gt;</th>
+        <th>Cria um menu retrátil (efeito sanfona).</th>
+        <th>
+          Esconde ou exibe blocos de conteúdo baseados no clique do usuário.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;summary&gt;</th>
+        <th>O título do &lt;details&gt;.</th>
+        <th>
+          Deve ser obrigatoriamente o primeiro elemento dentro de
+          &lt;details&gt;.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;dialog&gt;</th>
+        <th>Janela modal/popup nativa.</th>
+        <th>
+          Exibe caixas de alerta ou confirmação centralizadas. Aberto via JS com
+          .showModal().
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;progress&gt;</th>
+        <th>Barra de progresso visual.</th>
+        <th>
+          Indica a conclusão de uma tarefa usando os atributos value e max.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;meter&gt;</th>
+        <th>Barra de medição escada.</th>
+        <th>
+          Usada para exibir precisão fracionada dentro de limites conhecidos
+          (Ex: uso de CPU).
+        </th>
+      </tr>
+    </table>
+
+    <h2>📊 7. Estruturação de Tabelas</h2>
+    <p>
+      Montar tabelas no HTML exige uma ordem de tags muito específica. Os
+      professores mudam a ordem delas para ver se você conhece a posição.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;table&gt;</th>
+        <th>Crie o contêiner principal da tabela.</th>
+        <th>Tudo relacionado à tabela deve estar dentro dela.</th>
+      </tr>
+      <tr>
+        <th>&lt;caption&gt;</th>
+        <th>Defina o título ou legenda da tabela.</th>
+        <th>
+          Regra estrita: Se for usado, deve ser obrigatoriamente a primeira tag
+          dentro de &lt;table&gt;.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;thead&gt;</th>
+        <th>Agrupa o cabeçalho da tabela.</th>
+        <th>Guarda a linha que diz o nome das colunas.</th>
+      </tr>
+      <tr>
+        <th>&lt;tbody&gt;</th>
+        <th>Agrupa o corpo/conteúdo da tabela.</th>
+        <th>É onde ficam os dados principais e a maior parte das linhas.</th>
+      </tr>
+      <tr>
+        <th>&lt;tfoot&gt;</th>
+        <th>Agrupa o rodapé da tabela.</th>
+        <th>Usado para totais, médias ou resumos de dados.</th>
+      </tr>
+      <tr>
+        <th>&lt;tr&gt;</th>
+        <th>Cria uma linha na tabela.</th>
+        <th>
+          Funciona como um contêiner de linha. Você só pode colocar &lt;th&gt;
+          ou &lt;td&gt; dentro dela.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;th&gt;</th>
+        <th>Crie uma célula de cabeçalho (cabeçalho da tabela).</th>
+        <th>
+          O texto aqui dentro fica automaticamente em negrito e centralizado. Só
+          deve ser usado dentro do &lt;thead&gt;.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;td&gt;</th>
+        <th>Crie uma célula de dado comum (Dados da Tabela).</th>
+        <th>
+          É a célula normal da tabela. Usada dentro do &lt;tbody&gt; e
+          &lt;tfoot&gt;.
+        </th>
+      </tr>
+    </table>
+
+    <p>
+      ⚠️ <strong>Pegadinha Clássica de Prova sobre Tabelas: <br> </strong> Para juntar
+      duas colunas, usa-se o atributo <code>colspan="2"</code> na tag
+      <code>&lt;td&gt;</code>. Para juntar duas linhas, usa-se
+      <code>rowspan="2"<br></div> Eles não são tags, são atributos!
+    </p>
+
+    <h2>🔤 8. Citações e Termos Técnicos Raros</h2>
+    <p>
+      Essas tags raramente são usadas no dia a dia, mas caem em provas teóricas
+      para testar quem decorou o manual do HTML5.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;abbr&gt;</th>
+        <th>Identifique uma abreviação ou sigla.</th>
+        <th>
+          Obrigatório: Use o atributo <code>title</code> para dizer o
+          significado. Ex: <code>HTML</code>. Quando o usuário passa o mouse, o
+          significado aparece.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;blockquote&gt;</th>
+        <th>Cria uma citação longa em bloco de outro site/autor.</th>
+        <th>
+          O navegador joga o texto um pouco para a direita (recuo automático).
+          Você pode usar o atributo <code>cite="link"</code> para dizer de onde
+          tirou.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;q&gt;</th>
+        <th>Cria uma citação curta dentro de um parágrafo.</th>
+        <th>
+          Macete visual: o navegador coloca aspas (<code>""</code>)
+          automaticamente ao redor do texto. Você não precisa digitá-los.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;cite&gt;</th>
+        <th>Definir o título de uma obra (livro, filme, música).</th>
+        <th>
+          O navegador geralmente deixa o texto em itálico automaticamente.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;dfn&gt;</th>
+        <th>Indica a palavra que está sendo definida na frase.</th>
+        <th>Usado em glossários ou dicionários online.</th>
+      </tr>
+      <tr>
+        <th>&lt;kbd&gt;</th>
+        <th>Representa uma tecla do teclado que o usuário deve apertar.</th>
+        <th>
+          Ex: Pressione <code>Ctrl + C</code>. O navegador muda a fonte para
+          parecer uma tecla de computador.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;samp&gt;</th>
+        <th>Exibe a saída/resposta de um programa de computador.</th>
+        <th>
+          Usado para mostrar mensagens de erro de sistemas ou logs de terminal.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;var&gt;</th>
+        <th>Defina uma variável em matemática ou programação.</th>
+        <th>
+          O texto fica em itálico para parecer uma variável de inovação (Ex:
+          <code>x = 10</code>).
+        </th>
+      </tr>
+    </table>
+
+    <h2>⚙️ 9. Scripts, Shadow DOM e Fallbacks</h2>
+    <p>
+      Tags de controle técnico que lidam com navegadores antigos, segurança ou
+      programação avançada de componentes.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th>Marcação</th>
+        <th>O que faz (Resumido)</th>
+        <th>💡 Macete / Regra de Prova</th>
+      </tr>
+      <tr>
+        <th>&lt;noscript&gt;</th>
+        <th>Exibe uma mensagem se o JavaScript estiver desativado.</th>
+        <th>
+          Se o usuário bloquear o JavaScript no navegador, aparecerá o texto
+          dentro dessa tag (Ex: "Ative o JavaScript para ver este site"). Se o
+          JS estiver ativo, ela não é exibida.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;template&gt;</th>
+        <th>Guarde um código HTML que fica oculto.</th>
+        <th>
+          O navegador lê o código, mas não exibe na tela até que um script de
+          JavaScript "ordene" que ele seja aplicado. Útil para clonar elementos
+          clonáveis.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;slot&gt;</th>
+        <th>Crie um espaço reservado dentro de um Web Component.</th>
+        <th>
+          Usado em programação avançada (Shadow DOM) para criar componentes
+          reutilizáveis onde você pode inserir textos diferentes depois.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;map&gt;</th>
+        <th>Crie um mapa de links em cima de uma imagem.</th>
+        <th>
+          Permite mapear áreas de uma foto para que cada pedaço dela leve um
+          link diferente. Funciona junto com a tag &lt;area&gt;.
+        </th>
+      </tr>
+      <tr>
+        <th>&lt;area&gt;</th>
+        <th>Defina os pontos clicáveis dentro da tag &lt;map&gt;.</th>
+        <th>
+          Usa atributos de geometria como <code>shape="circle"</code> ou
+          <code>shape="rect"</code> e coordenadas (<code>coords</code>) para
+          desenhar onde o clique funciona.
+        </th>
+      </tr>
+    </table>
+
+    <p>🏁 Arquivo 100% completo. Com essas tabelas combinadas, <br> você tem absolutamente todas as tags semânticas, estruturais, <br> interativas e técnicas que o HTML5 possui. Boa sorte na sua prova!</p>
+
+    <footer>
+      <p>
+        &copy; 2026 - Meu Site de Consulta Privado. Desenvolvido com foco em
+        HTML5 Semântico.
+      </p>
+    </footer>
+  </body>
 </html>
