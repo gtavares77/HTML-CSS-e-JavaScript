@@ -82,6 +82,17 @@ table{
             height: 15px;
             font-size: 6px;
         }
+    }
 
+    #dica{
+        font-size: 4px;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 4px;
+        align-items: center;
+        text-align: center;
     }
 }
