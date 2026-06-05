@@ -42,8 +42,10 @@ body{
   }
 
   iframe{
-    display: inline-block;
+    align-items: center;
     padding: 10px;
+    border: #ffffff;
+    border-radius: ;
   }
 
     a{
@@ -67,7 +69,58 @@ footer{
 color: rgb(252, 245, 245);
 font-size: 8px;
 /* Altura do footer */
-padding-top: 25%; 
+padding-top: 20px;
+padding-top: fixed; 
+}
+
+@media (max-width: 1020px) {
+    header{
+        background-color: #001431;
+    }
+    h2{
+        font-size: 14px;
+        text-align: center;
+        background-color: #001431;
+
+
+    }
+
+    h3{
+        font-size: 12px;
+        text-align: center;
+        background-color: #001431;
+
+        border-radius: 8px;
+        border: 2px solid #ffffff;
+    }
+
+        h4{
+            background-color: #001431;
+            font-size: 8px;
+
+
+        margin-top: 2px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        }
+    iframe{
+    width: 220px;
+    height: 120px;
+    text-align: center;
+    padding: 10px;
+
+    }
+    .f1, .f2, .f3, .f4, .f5, .f6, .f7, .f8, .f9{
+    display: inline-block;
+    font-size: 8px;
+
+    }
+}
+.curso1, .curso2, .curso3, .curso4{
+    display: inline-block;
+    border-style: solid ;
+    margin-bottom: 12px;
 }
 
 
