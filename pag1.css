@@ -26,6 +26,12 @@ body{
       color: black;
       text-align: center;
     }
+    h3{
+      background-color: rgba(185, 185, 185, 0.747);
+      color: black;
+      margin-top: 20px;
+      padding: 20px;
+    }
 
     header{   
     background-color: rgba(185, 185, 185, 0.747);
@@ -46,24 +52,15 @@ body{
     text-decoration: underline;
     }
 
+/* Conteudo */
+
+
+
 /* Conteúdo do site */
-
-
-/* Roda pé */
-
-#rodape{ 
-font-size: 14px; 
-background-color: rgba(185, 185, 185, 0.747);
-color: black;
-margin-top: 10%;
-padding: 10px;
-}
 
 footer{
 color: rgb(252, 245, 245);
 font-size: 8px;
 /* Altura do footer */
 padding-top: 25%; 
-
 }
-
