@@ -4,14 +4,14 @@ body {
   background-color: #001431;
   font-family: "Press Start 2P", system-ui, sans-serif;
   font-size: 16px;
-  color: #b9b9b9be;
+  color: #ffffffbe;
   text-align: center;
   align-items: center;
 }
 
 /* Cabesalho */
 h4 {
-  color: rgb(146, 124, 124);
+  
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -26,14 +26,14 @@ h2 {
   text-align: center;
 }
 h3 {
-  background-color: rgba(185, 185, 185, 0.747);
+  /* background-color: rgba(185, 185, 185, 0.747); */
   color: black;
   margin-top: 20px;
   padding: 20px;
 }
 
 header {
-  background-color: rgba(185, 185, 185, 0.747);
+  /* background-color: rgba(185, 185, 185, 0.747); */
   padding-top: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
@@ -48,9 +48,9 @@ iframe {
 }
 
 a {
-  color: rgba(31, 31, 238, 0.747);
-  font-size: 10px;
-  margin: 10px;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 14px;
+  margin: 16px;
   text-decoration: none;
 }
 
@@ -78,21 +78,19 @@ footer {
 /* VERSAO - MOBILE */
 @media (max-width: 1020px) {
   header {
-    background-color: #001431;
+    background-color: brown;
   }
   h2 {
     font-size: 14px;
     text-align: center;
-    background-color: #001431;
+    color: blanchedalmond;
   }
 
   h3 {
     font-size: 12px;
     text-align: center;
-    background-color: #001431;
+    background-color: brown;
 
-    border-radius: 8px;
-    border: 2px solid #ffffff;
   }
 
   h4 {
@@ -110,13 +108,14 @@ footer {
     text-align: center;
     padding: 10px;
   }
+
 }
 .curso1,
 .curso2,
 .curso3,
 .curso4 {
   display: inline-block;
-  border-style: solid;
+
   margin-bottom: 12px;
 }
 
@@ -144,3 +143,16 @@ footer {
 .ferr-item img {
   display: block;
 }
+.cor1{
+ background-color: brown;
+}
+.cor2{
+   background-color: blanchedalmond;
+}
+.cor3{
+ background-color: brown;
+color: blanchedalmond ;
+font-weight: bold;
+}
+
+
