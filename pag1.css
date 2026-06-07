@@ -29,20 +29,28 @@ h3 {
   margin: 0;
   padding: 20px;
 }
+.seleçao{
+  color: black; 
+  background-color: blanchedalmond;
+
+}
 
 header {
   /* background-color: rgba(185, 185, 185, 0.747); */
   padding-top: 8px;
   padding-right: 10px;
-  padding-bottom: 8px;
+  padding-bottom: 40px;
   padding-left: 8px;
 }
 
 iframe {
-  align-items: center;
-  padding: 10px;
-  border: #ffffff;
-  border-radius:;
+  padding-top: 10px;  /* em baixo "Minha Seleçao de curso */
+  padding-bottom: 50px;
+
+}
+.stack{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 a {
