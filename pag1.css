@@ -16,8 +16,7 @@ h4 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
   margin-top: 6px;
- 
-
+  margin-bottom: 6px;
 }
 
 h2 {
@@ -93,12 +92,13 @@ footer {
     font-size: 16px;
     text-align: center;
     background-color: brown;
-    font-weight: bold;
-
   }
 
   h4 {
-    font-size: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 8px;
+  color: blanchedalmond;
   }
   iframe {
     width: 220px;
@@ -131,8 +131,8 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 12px;
-}
+  font-size: 6px;
+} 
 
 .ferr-item p {
   margin: 0;
@@ -153,4 +153,15 @@ color: blanchedalmond ;
 font-weight: bold;
 }
 
+.tam-icone01,
+.tam-icone02,
+.tam-icone03,
+.tam-icone04,
+.tam-icone05,
+.tam-icone06,
+.tam-icone07,
+.tam-icone08{
+  width: 30px;
+  height: 30px;
+}
 
