@@ -68,6 +68,8 @@ footer {
   bottom: 0;
 }
 
+
+
 /* VERSAO - MOBILE */
 @media (max-width: 1020px) {
   header {
@@ -140,7 +142,10 @@ footer {
 
 .ferr-item img {
   display: block;
+   width: 40px;
+  height: 40px;
 }
+
 .cor1{
  background-color: brown;
 }
